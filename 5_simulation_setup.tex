@@ -1,0 +1,44 @@
+Major parameters \cite{mystandard, andrus2015notional} used for the testing are listed in Table \ref{simulation-setup-table1} and Table \ref{simulation-setup-table10}. 
+\begin{table}[ht!]
+\centering
+\processtable{The Simple Notional MVDC System Parameters \label{simulation-setup-table1}}
+{\begin{tabu}{p{0.6cm}|p{2.9cm}|p{0.8cm}|p{0.6cm}|p{0.6cm}}
+\hline
+Type&Name&Quantity& P (MW) &$ P_{tot}$ (MW)\\
+\hline
+\multirow{2}{*}{Source} & MTG & 1& 36 & \multirow{2}{*}{40} \\  \cmidrule{2-4}
+{}& ATG & 1& 4&\\
+\hline
+ \multirow{2}{*}{Load} & Normal Loads (Propulsion load, service loads and radar load) && 40  & \multirow{2}{*}{44} \\ 
+\cmidrule{2-4}
+ {}& Pulsed Load  & 1 & 4&\\ 
+\hline
+\end{tabu}}{}
+\end{table}
+
+
+
+%simulation parameters
+\begin{table}[ht!]
+\centering
+\caption{Battery and Supercapacitor Parameters}
+\label{simulation-setup-table10}
+\begin{tabular}{p{2.5cm}|p{0.9cm}|p{2cm}|p{0.9cm}}
+\hline
+\multicolumn{2}{c|}{Battery} & \multicolumn{2}{c}{Supercapacitor} \\
+\cmidrule{1-4}
+Parameters & Values & Parameters & Values \\
+\cmidrule{1-4} 
+Rated capacity & 800Ah & Rated capacitance & 500.25F \\
+\cmidrule{1-4}
+Nominal voltage & 800V & Rated voltage & 550V \\
+\cmidrule{1-4}
+\cmidrule{1-4}
+Fully charged voltage & 931.18V & Initial voltage & 465V \\
+\cmidrule{1-4}
+Initial SOC & 75\% & Initial SOC & 82.65\% \\
+\cmidrule{1-4}
+
+\end{tabular}
+\end{table}
+%\input{4a_2}

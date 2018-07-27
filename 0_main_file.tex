@@ -1,0 +1,80 @@
+\documentclass{cta-author}
+\newtheorem{theorem}{Theorem}{}
+\newtheorem{corollary}{Corollary}{}
+\newtheorem{remark}{Remark}{}
+
+
+% correct bad hyphenation here
+\hyphenation{op-tical net-works semi-conduc-tor}
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+\graphicspath{ {images/} }
+%\usepackage{cite}
+\usepackage{longtable}
+\usepackage{amsmath}
+\usepackage{multirow}
+\usepackage{wrapfig}
+%\usepackage{float}
+%\usepackage[section]{placeins}
+\usepackage{subcaption}
+\usepackage{array}
+\usepackage[export]{adjustbox}
+%\usepackage{natbib}
+\usepackage{tabu}
+\usepackage{booktabs}
+\usepackage[colorlinks=black,bookmarks=black,pdfborder={0 0 0},% this for auto cross reference
+    linkcolor=black,urlcolor=black,citecolor=black,
+    breaklinks=true,bookmarksnumbered=true]{hyperref}
+
+
+\begin{document}
+
+\title{Controller Hardware-In-the-Loop (CHIL) Testing of Fuzzy Logic Based Energy Storage Management System for Electric Ship}
+\begin{abstract}
+\input{1_abstract.tex}
+\end{abstract}
+%
+%\author{\IEEEauthorblockN{Mohammed Masum Siraj Khan, M. O. Faruque\\}
+%\IEEEauthorblockA{Center for Advanced Power Systems, Florida State University,Tallahassee, Florida, USA}
+\author{\au{Alvi Newaz$^{1\corr}$},
+\au{Mohammed Masum Siraj Khan$^{1}$},
+\au{M. O. Faruque$^{1}$}}
+\address{\add{1}{Center for Advanced Power Systems (CAPS), Florida State University, Tallahassee, FL, 32310 USA}
+\email{an15m@my.fsu.edu}}
+
+
+
+% The paper headers
+%\markboth{Journal of \LaTeX\ Class Files,~Vol.~14, No.~8, August~2015}%
+%{Shell \MakeLowercase{\textit{et al.}}: Bare Demo of IEEEtran.cls for IEEE Journals}
+
+
+% make the title area
+\maketitle
+
+
+\section{Introduction}
+
+\input{1_introduction.tex}
+\section{MVDC System Model}
+\input{2_notional_mvdc_system}
+\section{FL Based ESM System Design}
+\input{3_design_energy_storage_management_controller}
+\section{Controller Hardware-in-the-Loop (CHIL) Based Test System}
+\input{4_chil_implementation}
+\section{Results And Analysis}
+\input{5_results}
+%\input{7_comparison_of_fl_and_pi}
+\section{Conclusion}
+\input{5_conclusion}
+
+
+\section*{Acknowledgment}
+This material is based upon research supported by or in part by, the US Office of Naval Research under award number N00014-16-1-2956.
+
+\bibliographystyle{iet}
+\bibliography{mybibi2}
+
+\end{document}
+
+
